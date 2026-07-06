@@ -91,10 +91,65 @@ button {
     gap: 20px; /* Automatically pushes all items 20px apart */
 }
 
-nav ul {
-    display: flex;
-    justify-content: left;
-    padding: 20px;
-    align-items: center;            /* Centers items vertically */
+/* 1. Header wrapper spans full width of screen */
+.site-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft bottom shadow */
+    position: sticky; /* Keeps nav pinned to top when scrolling */
+    top: 0;
+    z-index: 1000;
 }
+
+/* 2. Container limits width and keeps content off the screen walls */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, nav links right */
+    align-items: center; /* Centers items vertically */
+}
+
+/* 3. Logo styling */
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* 4. Reset list defaults and turn links into a row */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Perfectly gaps the links apart without margins */
+}
+
+/* 5. Link styling & interactive hover effects */
+.main-nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s ease; /* Smooth hover transition */
+}
+
+.main-nav a:hover {
+    color: #0076ff; /* Changes color on hover */
+}
+
+/* 6. Optional: Turn the final link into a call-to-action button */
+.main-nav .nav-btn {
+    background-color: #0076ff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.main-nav .nav-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
 
