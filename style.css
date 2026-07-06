@@ -84,3 +84,16 @@ button {
   white-space: nowrap;
   border: 0;
 }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Automatically pushes all items 20px apart */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Pushes links evenly across the bar */
+    align-items: center;            /* Centers items vertically */
+}
+
