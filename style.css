@@ -93,7 +93,8 @@ button {
 
 nav ul {
     display: flex;
-    justify-content: space-between; /* Pushes links evenly across the bar */
+    justify-content: left;
+    padding: 20px;
     align-items: center;            /* Centers items vertically */
 }
 
