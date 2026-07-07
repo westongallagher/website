@@ -23,7 +23,7 @@ html {
 body {
   min-height: 100vh;
   background: var(--background);
-  color: lightgray;
+  color: var(--foreground);
   font-family: var(--font-family);
   line-height: 1.6;
 }
