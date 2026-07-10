@@ -42,7 +42,7 @@
 
             try {
                 // Change this URL to your live Cloudflare Worker endpoint later
-                const response = await fetch('https://workers.dev', {
+                const response = await fetch('https://email-from-backend.westongallagher.workers.dev', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
